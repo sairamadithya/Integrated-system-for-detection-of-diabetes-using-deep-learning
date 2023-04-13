@@ -45,7 +45,7 @@ elif option=='Diagnostic toolkit':
         st.subheader('The user is requested to upload the thermal image of their foot.')
         @st.cache(allow_output_mutation=True)
         def load_model():
-            model=tf.keras.models.load_model(r"C:\Users\sairam\Desktop\research works\diabetes project\diabetic foot thermal images.h5")
+            model=tf.keras.models.load_model(r"diabetic foot thermal images.h5")
             return model
         with st.spinner('Model is being loaded..'):
             model=load_model()
@@ -72,7 +72,7 @@ elif option=='Diagnostic toolkit':
         st.subheader('The user is requested to upload the OCT image of their eye.')
         @st.cache(allow_output_mutation=True)
         def load_model():
-            model=tf.keras.models.load_model(r"C:\Users\sairam\Desktop\research works\diabetes project\diabetic OCT images(2.9).h5")
+            model=tf.keras.models.load_model(r"diabetic OCT images(2.9).h5")
             return model
         with st.spinner('Model is being loaded..'):
             model=load_model()
@@ -99,7 +99,7 @@ elif option=='Diagnostic toolkit':
         st.subheader('The user is requested to upload the fundus image of their eye.')
         @st.cache(allow_output_mutation=True)
         def load_model():
-            model=tf.keras.models.load_model(r"C:\Users\sairam\Desktop\research works\diabetes project\diabetic retinopathy classification gaussian filtered.h5")
+            model=tf.keras.models.load_model(r"diabetic retinopathy fundus gaussian filtered.h5")
             return model
         with st.spinner('Model is being loaded..'):
             model=load_model()
@@ -133,7 +133,7 @@ elif option=='Diagnostic toolkit':
         st.subheader('The user is requested to upload the camera image of the skin.')
         @st.cache(allow_output_mutation=True)
         def load_model():
-            model=tf.keras.models.load_model(r"C:\Users\sairam\Desktop\research works\diabetes project\skin image diabetes prediction.h5")
+            model=tf.keras.models.load_model(r"skin image diabetes prediction.h5")
             return model
         with st.spinner('Model is being loaded..'):
             model=load_model()
